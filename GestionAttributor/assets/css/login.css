@@ -1,0 +1,76 @@
+body {
+    background-image: url(../imgs/bckg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenu {
+    padding: 2em;
+    background-color: rgba(146, 131, 131, 0.2);
+    border-radius: 20px;
+    border: 1px solid rgba(135, 85, 85, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    border-radius: 40px;
+    line-height: 2.5em;
+    color: white;
+    outline: none;
+    width: 260px;
+    height: 2.7em;
+    box-shadow: 4px 4px 6px -4px #434343;
+}
+input[type="submit"] {
+    background-image: linear-gradient(to top, #3c79d1, #368ed9, #42a1de);
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+input[type="submit"]:hover {
+    background-image: linear-gradient(to top, #3969ae, #377cb9, #3e8ec2);
+}
+
+.input-icone {
+    background-color: black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.input-icone i {
+    position: absolute;
+    color: grey;
+    margin-left: 12px;
+    font-size: inherit;
+}
+
+input.saisie {
+    padding: 5px 10px 5px 40px;
+    background-color: #2e2e2e;
+}
+
+form .marg {
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+form .marg.submit {
+    margin-top: 2em;
+}
+
+.wrong .input-icone input {
+    border: 2px solid #ff6a67;
+    background-color: #3e2525;
+}
